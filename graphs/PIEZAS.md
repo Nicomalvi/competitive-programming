@@ -45,7 +45,7 @@ Input
 Output
 18
 
-## Resumen de la solucióntoda posible combinación de aristas
+## Resumen de la solución
 La idea general es simple, lo único complejo es decidir cómo implementarla: En vez de considerar toda combinación de aristas posibles, conecto todos los nodos con el nodo más barato que haya. Luego, conecto también los nodos que son parte de promos más baratas que las aristas normales.
 Ahora que tengo un grafo conexo donde sé que existe la solución óptima, ejecuto finalmente el algoritmo de Kruskal para obtener el Árbol Generador Mínimo, que por definición minimiza el costo total de conexión.
 ## Complejidad de la solución
