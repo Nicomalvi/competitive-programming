@@ -44,3 +44,7 @@ Con esto verifico si puedo ubicar todas las vacas:
 - Si no puedo, significa que la distancia es demasiado grande, así que descarto la mitad superior (distMax = distMedia - 1).
 
 Al finalizar (cuando el rango se achique completamente y distnMin >= distMax), la mejor distancia guardada es la máxima distancia mínima posible.
+
+## Complejidad de la solución
+- Complejidad temporal: Merge sort inicial + recorrida greedy lineal de los establos por cada paso de la busqueda binaria en distancias, O(n log n + n log k), donde k es la distancia máxima entre establos. 
+- Complejidad espacial: Uso array auxiliar para el merge sort, O(n) 

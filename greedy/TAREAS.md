@@ -13,7 +13,7 @@ Constraints
 1 ≤ N ≤ 100000
 0 ≤ start < end ≤ 1000000 
 
-## Example
+### Example
 Input
 3
 3
@@ -46,3 +46,7 @@ Primero ordeno las actividades por hora de finalización (merge sort modificado)
 Luego recorro las actividades en ese orden. Para cada actividad, si su hora de inicio es mayor o igual al fin de la última actividad seleccionada, "elijo hacerla" y actualizo el último fin. Si no, la descarto.
 
 Este procedimiento es un algoritmo greedy: en cada paso se elige la actividad compatible que termina más temprano, lo que maximiza la cantidad total de actividades que se pueden realizar.
+
+## Complejidad de la solución
+- Complejidad temporal: Merge sort de las actividades + recorrer la lista, O(n log n + n) = O(n log n)
+- Complejidad espacial: Guardo la lista de actividades y el merge sort usa arrays aux., O(n)

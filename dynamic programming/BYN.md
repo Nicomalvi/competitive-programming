@@ -40,3 +40,7 @@ El resultado del estado es la mínima cantidad de elementos no pintados a partir
 Surge un problema: los valores originales pueden ser muy grandes (hasta 10^6), lo que haría inviable la tabla de memorización. Para solucionarlo, tengo que comprimir la lista, reemplazando cada valor por su posición relativa en el orden de los elementos distintos. Los valores pasan a estar en el rango [1, k], con k≤200, y la tabla mem[i][UN][UB] termina siendo manejable.
 
 Finalmente, el algoritmo explora todas las decisiones posibles usando memorización y se queda con la que minimiza la cantidad de elementos no pintados.
+
+## Complejidad de la solución
+- Complejidad temporal: Hay O(n * k * k) estados, con k<=n. Cada estado se calcula 1 vez, entonces O(n^3)
+- Complejidad espacial: La matriz de memorización tiene dimensiones [n][k][k], nuevamente ya que n<=k resulta una complejidad O(n^3)
