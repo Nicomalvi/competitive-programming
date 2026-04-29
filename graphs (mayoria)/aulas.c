@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 
 #define A 0
 #define B 1
@@ -13,6 +12,8 @@ long capacity[MAX_NODES][MAX_NODES];
 long flow[MAX_NODES][MAX_NODES];
 long color[MAX_NODES];
 long pred[MAX_NODES];
+
+// implementaciones comunes BFS, ford fulkerson
 
 long min(long x, long y) {
   return x < y ? x : y;
@@ -34,7 +35,6 @@ long dequeue() {
   return x;
 }
 
-// Using BFS as a searching algorithm
 long bfs(long start, long target) {
   long u, v;
   for (u = 0; u < n; u++) {
@@ -55,7 +55,6 @@ long bfs(long start, long target) {
   return color[target] == C;
 }
 
-// Applying fordfulkerson algorithm
 long fordFulkerson(long source, long sink) {
   long i, j, u;
   long max_flow = 0;
@@ -65,7 +64,6 @@ long fordFulkerson(long source, long sink) {
     }
   }
 
-  // Updating the residual values of edges
   while (bfs(source, sink)) {
     long increment = O;
     for (u = n - 1; pred[u] >= 0; u = pred[u]) {
@@ -75,7 +73,6 @@ long fordFulkerson(long source, long sink) {
       flow[pred[u]][u] += increment;
       flow[u][pred[u]] -= increment;
     }
-    // Adding the path flows
     max_flow += increment;
   }
   return max_flow;

@@ -68,6 +68,15 @@ En el tercer caso de muestra, unas secuencias posibles son:
 7:(1,4,5,7); m7=1+|4−5|+1=3
 
 ## Resumen de la solución
+Por cómo se describe el problema la solución obvia es representar el sistema de aulas como un grafo con aristas de un mismo peso/valor:
 
+- Llegar al aula j desde el aula i requiere | i - j | pasos, la misma cantidad de pasos que que el costo de llegar desde el nodo i hasta el j pasando por todo nodo intermmedio.
+- La misma distancia requiere 1 solo paso si existe un "atajo", que simplemente sería crear la arista (i, j).
+
+Así es como creo el grafo: todo aula se i se conecta con sus vecinos en ambas direcciones, es decir, creo las aristas (i, i-1), (i-1, i), (i, i+1), (i+1, i). Luego creo los atajos de las aulas i hasta las aulas j, agrego las aristas (i, j).
+
+Una vez que tengo el grafo hecho, saber la distancia mínima desde el aula 1 hasta el resto de las aulas es correr cualquier algoritmo de camino mínimo partiendo desde el nodo 1, por lo que corro un BFS y ya obtengo todas las respuestas.
 
 ## Complejidad de la solución
+- Complejidad temporal: Construyo la lista de adyacencia agregando para cada nodo sus dos vecinos y su atajo, en O(n). Luego ejecuto BFS, que recorre cada nodo y arista una sola vez, en total: O(n)
+- Complejidad espacial: La lista de adyacencia tiene a lo sumo 3 aristas por nodo, y BFS utiliza estructuras auxiliares de tamaño n., en total: O(n)
