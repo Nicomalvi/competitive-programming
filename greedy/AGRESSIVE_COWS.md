@@ -17,16 +17,25 @@ For each test case output one integer: the largest minimum distance.
 
 ### Example
 Input:
+
 1
+
 5 3
+
 1
+
 2
+
 8
+
 4
+
 9
 
 Output:
+
 3
+
 FJ can put his 3 cows in the stalls at positions 1, 4 and 8, resulting in a minimum distance of 3.
 
 ## Resumen de la solución

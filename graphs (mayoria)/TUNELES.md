@@ -53,18 +53,27 @@ Note
 En el primer caso de muestra, las secuencias deseadas son:
 
 1:(1); m1=0;
+
 2:(1,2); m2=1;
+
 3:(1,3); m3=|3−1|=2.
 
 En el segundo caso de muestra, la secuencia para cualquier aula 1<i es siempre (1,i) y mi=|1−i|.
+
 En el tercer caso de muestra, unas secuencias posibles son:
 
 1:(1); m1=0;
+
 2:(1,2); m2=|2−1|=1;
+
 3:(1,4,3); m3=1+|4−3|=2;
+
 4:(1,4); m4=1;
+
 5:(1,4,5); m5=1+|4−5|=2;
+
 6:(1,4,6); m6=1+|4−6|=3;
+
 7:(1,4,5,7); m7=1+|4−5|+1=3
 
 ## Resumen de la solución

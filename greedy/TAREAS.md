@@ -7,35 +7,58 @@ The first line consists of an integer T, the number of test cases. For each test
 #### Output
 
 For each test case find the maximum number of activities that you can do.
+
 Constraints
 
 1 ≤ T ≤10
+
 1 ≤ N ≤ 100000
+
 0 ≤ start < end ≤ 1000000 
 
 ### Example
 Input
+
 3
+
 3
+
 3 9
+
 2 8
+
 6 9
+
 4
+
 1 7
+
 5 8
+
 7 8
+
 1 8
+
 6
+
 7 9
+
 0 10
+
 4 5
+
 8 9
+
 4 10
+
 5 7
 
 Output:
+
 1
+
 2
+
 3
 
 ## Resumen de la solución

@@ -19,30 +19,45 @@ Imprimí un entero — el número mínimo de pesos que debe pagar León para hac
 
 ### Example
 Input
+
 3 2
+
 1 3 3
+
 2 3 5
+
 2 1 1
 
 Output
+
 5
 
 Input
+
 4 0
+
 1 3 3 7
 
 Output
+
 16
 
 Input
+
 5 4
+
 1 2 3 4 5
+
 1 2 8
+
 1 3 10
+
 1 4 7
+
 1 5 15
 
 Output
+
 18
 
 ## Resumen de la solución

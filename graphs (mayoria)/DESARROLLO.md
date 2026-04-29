@@ -19,7 +19,9 @@ Se deben imprimir n enteros. El i-esimo de estos debe indicar la suma de las dis
 Input
 
 1
+
 0
+
 1
 
 Output
@@ -29,8 +31,11 @@ Output
 Input
 
 2
+
 0 5
+
 4 0
+
 1 2
 
 Output
@@ -40,15 +45,21 @@ Output
 Input
 
 4
+
 0 3 1 1
+
 6 0 400 1
+
 2 4 0 1
+
 1 1 1 0
+
 4 1 2 3
 
 Output
 
 17 23 404 0 
+
 ## Resumen de la solución
 La idea de la solución se basa en cómo funciona el algoritmo de Floyd-Warshall: Definimos caminoMinimo(i,j,k) como la función que devuelve el camino mínimo de i a j, utilizando los vértices de 1 a k. Luego:
 

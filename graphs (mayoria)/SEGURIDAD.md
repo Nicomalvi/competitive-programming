@@ -15,12 +15,19 @@ Se debe imprimir un único número indicando el costo de instalar un sistema de 
 Input
 
 4 7
+
 0 1 1
+
 0 2 2
+
 0 3 10
+
 0 3 3
+
 1 3 2
+
 2 3 1
+
 1 1 1
 
 Output
@@ -30,8 +37,11 @@ Output
 Input
 
 3 3
+
 0 1 2
+
 1 2 4
+
 2 0 5
 
 Output

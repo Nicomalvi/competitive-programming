@@ -25,25 +25,37 @@ Si hay varias respuestas posibles, cualquiera es válida.
 Input
 
 4 4
+
 1 2 6 3
+
 3 5 3 1
+
 1 2
+
 2 3
+
 3 4
+
 4 2
 
 Output
 
 YES
+
 1 0 0 0 
+
 2 0 0 0 
+
 0 5 1 0 
+
 0 0 2 1 
 
 Input
 
 2 0
+
 1 2
+
 2 1
 
 Output

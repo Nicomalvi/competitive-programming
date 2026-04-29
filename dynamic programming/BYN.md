@@ -11,13 +11,21 @@ For each test case output a single line with an integer representing the minimum
 
 ### Example
 Input:
+
 8
+
 1 4 2 3 3 2 4 1
+
 12
+
 7 8 1 2 4 6 3 5 2 1 8 7
+
 -1
+
 Output:
+
 0
+
 2
 
 ## Resumen de la solución

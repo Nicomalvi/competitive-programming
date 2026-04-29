@@ -23,7 +23,9 @@ Imprimir un número entero — el número máximo de aristas que Igna y Martín 
 Input
 
 3
+
 1 2
+
 1 3
 
 Output
@@ -33,9 +35,13 @@ Output
 Input
 
 5
+
 1 2
+
 2 3
+
 3 4
+
 4 5
 
 Output
@@ -45,6 +51,7 @@ Output
 En el primer caso de prueba, la única arista que se puede agregar de tal manera que el grafo no contenga bucles ni aristas múltiples es (2,3), pero agregar esta arista haría que el grafo deje de ser bipartito, por lo que la respuesta es 0.
 
 En el segundo caso de prueba, Igna y Martín pueden agregar las aristas (1,4) y (2,5).
+
 ## Resumen de la solución
 La solución es simple si tomo en cuenta el hecho de que el input es un árbol, que siempre es bipartito: Al ejecutar un DFS modificado sé que por cada nivel de profunidad estaré alternando entre los conjuntos A y B del grafo bipartito, entonces puedo llevar la cuenta de cuántos nodos hay en cada conjunto. 
 Finalmente, en un grafo bipartito la cantidad máxima de aristas que puede haber la consigo conectado todos los nodos de A con todos los nodos de B, entonces la respuesta es |Nodos A| * |Nodos B| - |Aristas ya existentes|.
