@@ -47,13 +47,12 @@ int main() {
     int piezas;
     int promos;
     scanf("%d %d", &piezas, &promos);
-    //IDEA GENERAL
     //conecto todos los nodos al nodo más barato (si no existe, promo esa arista siempre es la mejor opcion)
     //conecto todos los nodos con promo (si la promo es útil)
-    //me queda un grafo, corro kruskal para conseguir AGM
+    //corro kruskal para conseguir AGM
  
     long long costos[piezas];
-    struct arista aristas_validas[piezas + promos];// represento al grafo como lista de aristas
+    struct arista aristas_validas[piezas + promos];
     int cant_aristas = 0;
  
     long long nodo_barato = 0;
@@ -61,8 +60,6 @@ int main() {
         long long valor;
         scanf("%lld", &valor);
         costos[i] = valor;
-        //armo una lista de lo que vale cada nodo
-        //a la vez me fijo cual es el mas barato de todos y lo guardo
         if(costos[i]<costos[nodo_barato]){
             nodo_barato = i;
         }
@@ -91,7 +88,6 @@ int main() {
         }
     }
  
-    // todos los nodos estan conectados con el mas barato y entre si con sus promos
     // ordeno las aristas de menor a mayor y comienzo a agregarlas al AGM, teniendo en cuenta
     // costo y que no haya ciclos
  

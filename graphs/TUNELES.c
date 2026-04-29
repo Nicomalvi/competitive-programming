@@ -45,7 +45,7 @@ int main() {
     int res[cantidad_aulas+1];
 
     // las aulas son los nodos de un grafo, las aristas las formas de viajar
-    // en particular los atajos son una arista unidireccional
+    // atajos son una arista unidireccional
     // uso lista de adyacencia
     struct Node* lista[cantidad_aulas + 1];
 
